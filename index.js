@@ -19,6 +19,7 @@ app.use(express.json());
 
 // Routes
 app.use("/stock", require("./routes/stockHandler"));
+app.use("/activity", require("./routes/activityHandler"));
 
 app.listen(9001, () => {
   console.log("Server started on port 9001");
